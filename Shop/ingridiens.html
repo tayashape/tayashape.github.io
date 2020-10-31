@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shop for Ingridients</title>
+	<link rel="stylesheet" href="food.css">
+	<link rel="stylesheet" href="nav.css">
+	<link rel="stylesheet" href="ingridiens.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<a href="food.html" class="item">Resipes</a>
+			<a href="ingridiens.html" class="item">Shop For Ingrediens</a>
+			<a href="contact.html" class="item">Contact</a>
+			<a href="Information.html" class="item">Information</a>
+		</nav>	
+	</header>
+	<aside class="aside">
+		<div class="a">
+			<a href="#dairy" class="item">Dairy Produce</a>
+			<a href="#Flour_Products" class="item">Flour Products</a>
+			<a href="#Chocolate" class="item">Chocolate Product</a>
+			<a href="#Spices" class="item">Spices</a>
+			<a href="#" class="item">Fruits</a>
+		</div>
+	</aside>
+	<main class="main">
+		<div id="dairy" class="line">
+			<div class="card">
+				<img src="Milk.jpg" alt="">
+				<span>Organic Milk</span>
+				<span>1.15&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="butter1.jpg" alt="">
+				<span>Organic Butter</span>
+				<span>2.00&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="eggs2.jpg" alt="">
+				<span>Eggs</span>
+				<span>2.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="sourcream3.jpg" alt="">
+				<span>Sour Cream</span>
+				<span>1.99&dollar;</span>
+			</div>
+			
+		</div>
+		
+		<div id="Flour_Products" class="line">
+			<div class="card">
+				<img src="Croissants.jpg" alt="">
+				<span>Сroissants</span>
+				<span>12.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="img7.jpg" alt="">
+				<span>Raisins Pancakes</span>
+				<span>10.00&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="img8.jpg" alt="">
+				<span>Apple Pancakes</span>
+				<span>10.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Flour.jpg" alt="">
+				<span>Flour</span>
+				<span>2.99&dollar;</span>
+			</div>
+		</div>
+		<div id="Chocolate" class="line">
+			<div class="card">
+				<img src="Chocolate2.png" alt="">
+				<span>Chocolate Sea Salt</span>
+				<span>3.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Chocolate3.jpg" alt="">
+				<span>Raspberry Chocolate</span>
+				<span>7.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Chocolate4.jpg" alt="">
+				<span>Caramel Sea Salt</span>
+				<span>6.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Chocolate5.jpg" alt="">
+				<span>Croissants Chocolate Filling</span>
+				<span>12.99&dollar;</span>
+			</div>
+		</div>
+
+
+		<div id="Spices" class="line">
+			<div class="card">
+				<img src="Cinnamon2.jpg" alt="">
+				<span>Cinnamon</span>
+				<span>4.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Sugar1.jpg" alt="">
+				<span>Sugar</span>
+				<span>1.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Sea salt.jpg" alt="">
+				<span>Sea Salt</span>
+				<span>6.99&dollar;</span>
+			</div>
+		</div>
+		<div id="Chocolate" class="line">
+			<div class="card">
+				<img src="sweetpotatoes.jpg" alt="">
+				<span>Sweet Potato</span>
+				<span>3.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Ras.jpg" alt="">
+				<span>Rasbperries</span>
+				<span>3.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Straw.jpg" alt="">
+				<span>Strawberries</span>
+				<span>4.99&dollar;</span>
+			</div>
+			<div class="card">
+				<img src="Blueberries.jpg" alt="">
+				<span>Blueberries</span>
+				<span>2.99&dollar;</span>
+			</div>
+		</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" type="text/javascript"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  			$('.line').slick({
+   		 	// arrows: true,
+   		 	slidesToShow: 3
+  			});
+  			console.log(1);
+		});			
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.item').on('click', function() {
+				let element = $(this).attr('href');
+				$('html, body').animate({scrollTop: $(element).offset().top}, 500);
+				return false;
+			})
+		})
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+	grid-template-areas: 
+	"header header"
+	"aside main"
+	"aside main";
+	grid-template-columns: 1fr 3fr;
+}
+.aside{
+	justify-content: flex-start;
+	position: relative;
+	
+}
+.a{
+	justify-content: flex-start;
+	display: flex;
+	position: fixed;
+	flex-direction: column;
+	width: calc(25% - 12px);
+}
+.a>.item{
+	height: 70px;
+	width: 100%;
+	border-bottom:  2px solid #065446; 
+
+}
+.line{
+	/*display: inline-block;*/
+	/*overflow: hidden;*/
+	width: 100%;
+}
+.card{
+	/*width: calc(100% / 4 - 24px);*/
+	display: inline-block;
+	/*flex-direction: column;*/
+	margin: 10px;
+
+    
+}
+.card>img{
+	width: 100%;
+	height: 200px;
+}
+.card>span{
+	font-size: 19px;
+	margin-top:8px;
+	width: 100%;
+	display: inline-block;
+}

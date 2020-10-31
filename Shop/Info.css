@@ -1,0 +1,10 @@
+.body {
+	grid-template-areas:
+	 "header header"
+	 "main main"
+	 "footer footer";
+}
+.text {
+    font-size: 23px;
+    margin-top: 8px;
+}
