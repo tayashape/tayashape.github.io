@@ -1,0 +1,42 @@
+*{
+	font-family: 'Merriweather', serif;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background-color: #f9c0c0;
+}
+
+
+.nav{
+	width: 100%;
+	height: 60px;
+	background-color: #a8dda8;
+	display:flex;
+	justify-content: space-around;
+	align-content: center;
+}
+.item{
+	color: #2d6187;
+	font-size: 23px;
+	display: flex;
+	align-items: center;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+
+}
+main{
+	max-width: 800px;
+	margin: auto;
+	width: 100%;
+	padding: 15px;
+}
+img{
+	width: 70%;
+	margin: auto;
+	display: block;
+
+}
